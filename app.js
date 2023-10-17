@@ -47,3 +47,23 @@ console.log(arr1.every((n) => n%2==0));  //* -> return true
 [1, 2, 3, 4].some((n) => n%2==0); //* -> return -> true
 
 
+//* Reduce 
+// reduce the array to a single value
+// syntax -> arr.reduce(reducer function with 2 arguments for(accumulator, element));
+// the first argument called accumulator
+// second is called element
+// accumulator -> after every operation the result value will store in accumulator and used in second call and at last we got our final accumulator as a output
+
+let num2 = [1, 2, 3, 4]
+let finalValue = num2.reduce((res, el) => res+el);
+// console.log(finalValue); //* -> output will be 10
+
+// first res -> null value in it -> it got added by first element -> the result got transfer to the next accumulator -> another additon done -> at last we got every element added -> return a single value
+// 0 + 1 -> 1
+// 1 + 2 -> 3
+// 3 + 3 -> 6
+// 6 + 4 -> 10 
+//* final output is 10.
+
+
+
