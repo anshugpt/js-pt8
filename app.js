@@ -146,6 +146,49 @@ const newData = {...data, id: 125};
 // then we add id key into that
 
 
+//* Rest 
+// opposite of spread
+// same syntex as spread
+// allows a function to take an indefinite number of arguments and bundle them in an array
+
+function sumArr(...arrgs){   //* this can take lots of arguments
+    for(let i=0; i<arrgs.length; i++){
+        console.log(`you gave us : ${arrgs[i]}`);
+    } 
+}
+
+
+//* Destructuring
+// storing value of array into multiple variable
+// old array will not change
+
+let name = ["tony", "Anshu", "Anjali", "Anushka"]
+let [winner, runnerup, ...others] = name;
+console.log(winner, runnerup); //* output -> 'tony' 'Anshu'
+// others -> ["Anjali", "Anushka"] (destructuring + rest)
+
+
+//* Destructuring on objects
+
+const student = {
+    name: "Anshu",
+    age: 21,
+    class: "BCA",
+    subject:"computer science",
+    usename: "anshugu99",
+    password: 1234
+};
+
+let {username, password} = student;
+// variable usename -> "anshugu99"
+// variable password -> 1234
+// we need to name our variable same as Key
+// other wise it will show undefine
+// if we want to save object info into diffrent name variable :-
+//* let [username: user] = student;
+// now user -> "anshugu99"
+ 
+
 
 
 
