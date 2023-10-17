@@ -110,4 +110,42 @@ sum(2); //* -> return 4
 sum(2,5); //* -> return 7
 
 
+//* Spread
+// expand an iterable into multiple values
+// if we want to pass all the value of our array then we can use spread
+
+Math.min(...num3); //* -> return 2 
+// console.log(..."AnshuGupta"); //* -> return -> A n s h u G u p t a
+
+//* Spread with array literals
+
+let arr3 = [1, 2, 3, 5]
+// let newarr3 = arr3 
+//   or
+// let newarr3 = (...arr3)
+
+let chars = [..."anshu"]
+// chars -> ["a", "n", "s", "h", "u"]
+
+let odd = [1, 3, 5, 7]
+let evenNum = [2, 4, 6, 8]
+let newNum = [...odd, ...evenNum]
+// newNum -> [1, 3, 5, 7, 2, 4, 6, 8]
+
+
+
+//* Spread with object literals
+
+const data = {
+    email: "anshugupta@gamil.com",
+    password: 1234
+};
+
+const newData = {...data, id: 125};
+// we copy the object into new variable
+// then we add id key into that
+
+
+
+
 
