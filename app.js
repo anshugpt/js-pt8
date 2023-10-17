@@ -97,5 +97,17 @@ let minNum = num3.reduce((min, el) => {
     }
 });
 
+//* Default parameters
+// if we want to give a default value to our arguments
+// syntax -> function func(a, b = 2){ //* -> if we pass only a value then default value for b is always 2
+    //do something
+//}
+
+function sum(a, b =2){
+    return a + b;
+}
+sum(2); //* -> return 4 
+sum(2,5); //* -> return 7
+
 
 
