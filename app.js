@@ -39,12 +39,12 @@ let even = num1.filter((n) => n%2==0);
 // all condition need to have true value so the overall output will be true
 
 let arr1 = [2, 4, 6, 8]
-console.log(arr1.every((n) => n%2==0));  //* -> return true
+// console.log(arr1.every((n) => n%2==0));  //* -> return true
 
 //* Some 
 // same as every but like or if some of are true then overall output will be true
 
-[1, 2, 3, 4].some((n) => n%2==0); //* -> return -> true
+// [1, 2, 3, 4].some((n) => n%2==0); //* -> return -> true
 
 
 //* Reduce 
@@ -64,6 +64,38 @@ let finalValue = num2.reduce((res, el) => res+el);
 // 3 + 3 -> 6
 // 6 + 4 -> 10 
 //* final output is 10.
+
+
+//* Maximum value in array
+// using reduce
+
+let num3 = [2, 3, 4, 5, 7, 6, 8, 10 ]
+let maxValue = num3.reduce((max, el) => {
+    if(el > max){
+        return el;
+    } else {
+        return max;
+    }
+});
+// console.log(maxValue);
+
+//* Practice Qs
+
+//Qs1
+
+let num4 = [10, 20, 30, 40, 35]
+let check = num4.every((n) => n%10==0);
+// console.log(check);
+
+//Qs2
+
+let minNum = num3.reduce((min, el) => {
+    if(el < min){
+        return el; 
+    } else {
+        return min;
+    }
+});
 
 
 
